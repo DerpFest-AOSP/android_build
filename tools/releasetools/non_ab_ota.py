@@ -293,6 +293,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   device_specific.FullOTA_PostValidate()
 
+  script.Print(" ")
+  script.Print("Flashing boot image..")
   script.WriteRawImage("/boot", "boot.img")
 
   script.ShowProgress(0.1, 10)
